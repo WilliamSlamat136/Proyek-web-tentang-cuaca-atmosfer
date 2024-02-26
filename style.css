@@ -1,0 +1,61 @@
+* {
+    font-family: Arial, sans-serif; /* keluarga font */
+    font-size: 11px; /* Ukuran font utama pada tag <p></p> */
+    background-color: #FFFFFF; /* Warna latar belakang laman web */
+    color: #5988FF; /* Warna teks */ 
+}
+
+@keyframes color-change {
+    0% {
+        color: blue;
+    }
+  
+    50% {
+        color: #5988FF;
+    }
+  
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes color-change2 {
+    0% {
+        color: lightblue;
+    }
+  
+    33% {
+        color: #5988FF;
+    }
+  
+    66% {
+        color: blue;
+    }
+
+    100% {
+        color: lightblue;
+    }
+}
+
+h1 {
+    color: blue; /* Warna tajuk (header)*/
+    background-color: lightblue;
+    border: 8px;
+    text-decoration-color: black;
+    font-size: 24px; /* Ukuran font tajuk (header) */
+    font-family: Georgia, serif; /* Keluarga font yang digunakan di tajuk (header) */
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
+}
+
+h2 {
+    color: #FD98FB;
+    background-color: #D6FF6B;
+    border: 5px;
+    text-decoration-color: black;
+    font-size: 18px;
+    font-family: 'Inter';
+    animation: color-change2 2s infinite;
+}
